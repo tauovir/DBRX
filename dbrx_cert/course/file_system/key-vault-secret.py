@@ -41,8 +41,9 @@ else:
 storage_account_name = "mountstorage101"
 container_name = "preprd-datalake"
 mount_point = "files"
-client_id = "d77b2e41-6c2d-4fec-9658-147052f04c83"
-tenant_id = "6ad11fd9-a502-4e83-9bf7-69bddcc28e29"
+# Service Principal
+client_id = "xxxxxxxx"
+tenant_id = "xxxxxxxxx"
 client_secret = dbutils.secrets.get(scope='key-vault-scope',key = 'dbrx-clientid')
 
 # COMMAND ----------
